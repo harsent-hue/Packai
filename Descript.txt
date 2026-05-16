@@ -1,0 +1,13 @@
+# Descript File
+
+This is a description file created in the PROMT_arch directory.
+
+## Purpose
+This file serves as a placeholder for project documentation or notes about the PROMT_arch project.
+
+## Contents
+- Project overview
+- Architecture details
+- Development notes
+
+Edit this file to add specific information about your project.

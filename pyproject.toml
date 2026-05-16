@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PROMT_arch"
+version = "0.1.0"
+description = "A Python application for processing and analyzing data"
+readme = "Descript.md"
+requires-python = ">=3.8"
+license = {text = "All Rights Reserved"}
+authors = [
+    {name = "Developer", email = "developer@example.com"},
+]
+keywords = ["data-processing", "analysis", "tool"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "customtkinter>=5.0.0",
+    "requests>=2.25.0",
+    "keyring>=23.0.0",
+]
+
+[project.optional-dependencies]
+develop = [
+    "pytest",
+    "pytest-cov",
+    "black",
+    "flake8",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/harsent-hue/Packai"
+"Bug Tracker" = "https://github.com/harsent-hue/Packai/issues"
+
+[project.scripts]
+promt-arch = "pa:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
